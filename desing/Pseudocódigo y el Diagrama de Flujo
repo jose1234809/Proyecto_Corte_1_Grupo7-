@@ -1,1 +1,50 @@
-
+{
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "language": "markdown",
+        "id": "seudocodigo-dolar-track"
+      },
+      "source": [
+        "## Seudocódigo: Dolar-Track\n",
+        "1. INICIAR\n",
+        "2. Crear lista vacía `trm_semanal`\n",
+        "3. REPETIR\n",
+        "    a. Mostrar menú:\n",
+        "        - 1. Ingresar TRM de los últimos 7 días\n",
+        "        - 2. Calcular Promedio y Volatilidad\n",
+        "        - 3. Ver Reporte Ordenado\n",
+        "        - 4. Salir\n",
+        "    b. Leer opción del usuario\n",
+        "    c. SEGÚN la opción:\n",
+        "        i.   Si opción = 1:\n",
+        "             - Vaciar lista `trm_semanal`\n",
+        "             - PARA i = 1 HASTA 7:\n",
+        "                 - Solicitar TRM del día i\n",
+        "                 - Si TRM < 0, mostrar error y volver a pedir\n",
+        "                 - Si TRM válido, agregar a `trm_semanal`\n",
+        "             - Mostrar mensaje de registro exitoso\n",
+        "        ii.  Si opción = 2:\n",
+        "             - Si `trm_semanal` no tiene 7 valores, mostrar advertencia\n",
+        "             - Calcular promedio de la lista\n",
+        "             - Inicializar contadores venta y compra en 0\n",
+        "             - PARA cada valor en `trm_semanal`:\n",
+        "                 - Si valor > promedio, aumentar contador venta\n",
+        "                 - Si valor < promedio, aumentar contador compra\n",
+        "             - Calcular volatilidad (máximo - mínimo)\n",
+        "             - Mostrar promedio, contadores y volatilidad\n",
+        "        iii. Si opción = 3:\n",
+        "             - Si `trm_semanal` no tiene 7 valores, mostrar advertencia\n",
+        "             - Ordenar la lista de mayor a menor\n",
+        "             - Mostrar la lista ordenada\n",
+        "        iv.  Si opción = 4:\n",
+        "             - Mostrar mensaje de despedida\n",
+        "             - SALIR del ciclo\n",
+        "        v.   Si opción no válida:\n",
+        "             - Mostrar mensaje de error\n",
+        "4. FIN"
+      ]
+    }
+  ]
+}
